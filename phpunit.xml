@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	bootstrap="./vendor/autoload.php"
+	colors="true"
+	testdox="true"
+	cacheResult="false"
+	xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+>
+	<coverage>
+		<include>
+			<directory>./src/</directory>
+		</include>
+
+		<report>
+			<html outputDirectory="./coverage/html/"/>
+		</report>
+	</coverage>
+
+	<testsuites>
+		<testsuite name="request-id">
+			<directory>tests</directory>
+		</testsuite>
+	</testsuites>
+
+	<logging/>
+</phpunit>

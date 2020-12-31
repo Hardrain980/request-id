@@ -1,0 +1,6 @@
+# Composer
+/vendor/
+composer.lock
+
+# PHPUnit test coverage report
+/coverage/

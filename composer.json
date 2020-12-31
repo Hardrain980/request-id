@@ -1,0 +1,26 @@
+{
+    "name": "ringa/request-id",
+    "description": "PHP middleware to identify requests and handlers with random id.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "psr/http-message": "^1.0",
+        "psr/http-server-handler": "^1.0",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "require-dev": {
+        "guzzlehttp/psr7": "^1.7",
+        "phpunit/phpunit": "^9",
+        "ringa/dummy-request-handler": "^1.0",
+        "phpstan/phpstan": "^0.12.64"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leo\\Middlewares\\": "src/"
+        }
+    },
+    "scripts": {
+        "unit-test": ["vendor/bin/phpunit -c phpunit.xml"],
+        "analyse": ["vendor/bin/phpstan analyse src tests --level 5"]
+    }
+}
